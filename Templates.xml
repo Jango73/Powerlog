@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Template>
+		<FileNamePattern>.*?Somename1.*?</FileNamePattern>
+		<Tag>
+			<Name>SomeDisplayName1</Name>
+			<Parent></Parent>
+			<Pattern>.*?SomePattern1.*?</Pattern>
+			<Extract>[0-9]{2}/[0-9]{2}/[0-9]{4} [0-9]{2}:[0-9]{2}:[0-9]{2}</Extract>
+			<BackColor>Teal</BackColor>
+			<ForeColor>White</ForeColor>
+		</Tag>
+	</Template>
+	<Template>
+		<FileNamePattern>.*?Somename2.*?</FileNamePattern>
+		<Tag>
+			<Name>SomeDisplayName2</Name>
+			<Parent></Parent>
+			<Pattern>.*?SomePattern2.*?</Pattern>
+			<Extract>(?&lt;DAY&gt;[0-9]{2})/(?&lt;MONTH&gt;[0-9]{2})/(?&lt;YEAR&gt;[0-9]{2}) (?&lt;HOUR&gt;[0-9]{2}):(?&lt;MINUTE&gt;[0-9]{2}):(?&lt;SECOND&gt;[0-9]{2}):(?&lt;MILLISECOND&gt;[0-9]{3})</Extract>
+			<Plot>SomeValueName, (?&lt;VALUE&gt;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?)</Plot>
+			<BackColor>Teal</BackColor>
+			<ForeColor>White</ForeColor>
+		</Tag>
+	</Template>
+</Root>
